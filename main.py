@@ -191,7 +191,7 @@ if opcion == 'Energía por territorio':
 if opcion == "Energía en la UE":
 
     # Crear gráfico de barras con st.bar_chart
-    st.subheader(f"Distribución porcentual de la generación de energía en la UE (2000 - 2023)")
+    # st.subheader(f"Distribución porcentual de la generación de energía en la UE (2000 - 2023)")
 
     # Lista de países de la Unión Europea
     eu_countries = [
