@@ -4,7 +4,8 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 # CARGAR DATOS
-data = pd.read_csv('Renewable_Energy.csv')
+data = pd.read_csv(r'C:\Users\Pablo\OneDrive\Documentos\Master\Visualización_ProcesamientoyAlmacenamientodeDatos\Proyecto_Final\Proyecto_Visualizacion_PabloTL\Renewable_Energy.csv')
+
 
 # Dividir el dataset en dos según la columna 'Indicator'
 grouped_data = data.groupby('Indicator')
@@ -32,7 +33,7 @@ with col1:
 
 with col2:
     # Imagen en la segunda columna
-    st.image("imagen_introduccion.webp", width=200, caption="Energía sostenible")
+    st.image(r'C:\Users\Pablo\OneDrive\Documentos\Master\Visualización_ProcesamientoyAlmacenamientodeDatos\Proyecto_Final\Proyecto_Visualizacion_PabloTL\imagen_introduccion.webp', width=200, caption="Energía sostenible")
 
 # Diferentes páginas
 opcion = st.sidebar.radio("Selecciona un tipo de visualización:", ["Energía por territorio", "Comparativas", "Energía en la UE"])
